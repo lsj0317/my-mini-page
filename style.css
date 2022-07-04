@@ -1,0 +1,113 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* {
+    font-family: "Pretendard", serif;
+}
+
+body {
+    background-color: black;
+}
+
+.myTitle {
+    color: red;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    /* background-color: green; */
+    border-radius: 100%;
+
+    border: 1px solid #fff;
+    background-image: url('lemon.jpg');
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 3px 3px 5px 0px rgb(151, 85, 85);
+}
+
+.main {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sub {
+    color: #fff;
+    font-size: 14px;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.wrap {
+    /* background-color: green; */
+    width: 300px;
+    margin: 30px auto 0px auto;
+    /* 마진 : 상 우 하 좌 */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap>a {
+    width: 300px;
+    height: 50px;
+
+    background-color: #fff;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    /* a태그의 및줄을 없애기 */
+
+    box-shadow: 3px 3px 5px 0px rgb(151, 85, 85);
+    /* 그림자 효과주기 : 1번째 값: 수평방향의 오프셋 길이를 나타냄, 
+        2번째 값: 수직방향의 오프셋 길이를 나타냄
+        3번째 값: 그림자의 흐림반경(blur radius)을 나타냄
+        4번째 값: 그림자의 확산거리(Spread distance)를 나타냄 - 양수를 지정하면 전방위확대(오른쪽에 그림자가 붙음), 음수를 지정하면 그림자크기가 줄어듬(왼쪽에 그림자가 붙음) 
+        그림자의 색상(color)을 지정 */
+}
+
+.wrap>a:hover {
+    /* a태그 전체의 배경색을 지정 */
+    background-color: #dedede;
+}
+
+.wrap>a:hover:nth-of-type(1) {
+    /* wrap의 a태그를 마우스를 가져다 대었을 때 나타나는 효과:a태그의 1번째에 효과를 줘라 */
+    color: crimson;
+}
+
+.wrap>a:hover:nth-of-type(2) {
+    /* wrap의 a태그를 마우스를 가져다 대었을 때 나타나는 효과:a태그의 2번째에 효과를 줘라 */
+    color: dodgerblue;
+}
+
+.wrap>a:hover:nth-of-type(3) {
+    /* wrap의 a태그를 마우스를 가져다 대었을 때 나타나는 효과:a태그의 3번째에 효과를 줘라 */
+    color: yellowgreen;
+}
+
+.wrap>a:hover:nth-of-type(4) {
+    /* wrap의 a태그를 마우스를 가져다 대었을 때 나타나는 효과:a태그의 4번째에 효과를 줘라 */
+    color: magenta;
+}
+
+.wrap>a:nth-of-type(1),
+.wrap>a:nth-of-type(2),
+.wrap>a:nth-of-type(3) {
+    /* wrap의 a태그들의 위아래 간격 조정 : 마지막 4번째는 제외 */
+    margin-bottom: 10px;
+}
